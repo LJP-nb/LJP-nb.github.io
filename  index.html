@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端适配 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 网站描述 -->
+    <meta name="description" content="智慧生活网 - 专注智能家居、智能穿戴等科技产品的电商平台">
+    <!-- 搜索关键词 -->
+    <meta name="keywords" content="智能家居,智能手表,扫地机器人,智能设备,科技生活">
+    <!-- 作者信息 -->
+    <meta name="author" content="2306103204 李锦鹏">
+    <title>智慧生活网 - 首页</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- 页头 -->
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="images/logo.png" alt="智慧生活网">
+            <span>智慧生活网</span>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="搜索商品...">
+            <button>🔍 搜索</button>
+        </div>
+        <div class="top-nav">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="#">服务项目</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- 侧边导航 -->
+    <aside>
+        <div class="side-nav">
+            <!-- 修正h3跳级为h2，消除标题层级警告 -->
+            <h2>商品分类</h2>
+            <ul>
+                <li><a href="#">🏠 智能家居</a></li>
+                <li><a href="#">⌚ 智能穿戴</a></li>
+                <li><a href="#">❤️ 智能健康</a></li>
+                <li><a href="#">🚗 智能出行</a></li>
+                <li><a href="#">🎧 影音娱乐</a></li>
+                <li><a href="#">🔌 手机配件</a></li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main>
+        <!-- 新增页面唯一h1一级标题，解决无h1警告 -->
+        <h1 class="hidden-title">智慧生活智能商品商城</h1>
+
+        <!-- 焦点图轮播 新增section隐藏标题 -->
+        <section class="carousel-container">
+            <h2 class="hidden-title">首页轮播广告</h2>
+            <div class="carousel-slides">
+                <div class="slide active">
+                    <img src="images/banner1.jpg" alt="智慧生活">
+                </div>
+                <div class="slide">
+                    <img src="images/banner2.jpg" alt="智能家居">
+                </div>
+                <div class="slide">
+                    <img src="images/banner3.jpg" alt="科技创新">
+                </div>
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </section>
+
+        <!-- 精品推荐板块 -->
+        <section class="products">
+            <h2 class="section-title">精品推荐</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/product1.jpg" alt="智能音箱">
+                    <h3>智能语音音箱</h3>
+                    <p class="price">¥299</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product2.jpg" alt="智能手表">
+                    <h3>智能运动手表</h3>
+                    <p class="price">¥899</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product3.jpg" alt="扫地机器人">
+                    <h3>扫地机器人</h3>
+                    <p class="price">¥1599</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product4.jpg" alt="智能摄像头">
+                    <h3>智能摄像头</h3>
+                    <p class="price">¥199</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product5.jpg" alt="智能灯泡">
+                    <h3>智能LED灯泡</h3>
+                    <p class="price">¥59</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/product6.jpg" alt="智能门锁">
+                    <h3>指纹智能门锁</h3>
+                    <p class="price">¥1299</p>
+                    <button class="btn-buy">立即购买</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 滑动TAB板块 新增section隐藏标题 -->
+        <section class="tab-container">
+            <h2 class="hidden-title">商品分类榜单</h2>
+            <div class="tab-header">
+                <button class="tab-btn active">🔥 热门推荐</button>
+                <button class="tab-btn">✨ 新品上架</button>
+                <button class="tab-btn">⏰ 限时特惠</button>
+            </div>
+            <div class="tab-content active">
+                <ul class="tab-list">
+                    <li><span>智能语音音箱</span><span class="tag">热卖 5000+</span></li>
+                    <li><span>智能运动手表</span><span class="tag">热卖 3200+</span></li>
+                    <li><span>扫地机器人</span><span class="tag">热卖 1800+</span></li>
+                    <li><span>无线蓝牙耳机</span><span class="tag">热卖 8900+</span></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <ul class="tab-list">
+                    <li><span>新款智能手环</span><span class="tag">新品</span></li>
+                    <li><span>AI智能摄像头</span><span class="tag">新品</span></li>
+                    <li><span>智能空气净化器</span><span class="tag">新品</span></li>
+                    <li><span>折叠屏手机</span><span class="tag">新品</span></li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <ul class="tab-list">
+                    <li><span>智能插座</span><span class="tag">限时5折</span></li>
+                    <li><span>智能台灯</span><span class="tag">满199减30</span></li>
+                    <li><span>电动牙刷</span><span class="tag">第二件半价</span></li>
+                    <li><span>无线充电器</span><span class="tag">特惠69元</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- 页脚 -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>关于我们</h4>
+            <ul>
+                <li><a href="about.html">公司简介</a></li>
+                <li><a href="#">加入我们</a></li>
+                <li><a href="#">投资者关系</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>客户服务</h4>
+            <ul>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">售后服务</a></li>
+                <li><a href="#">退换货政策</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>关注我们</h4>
+            <img src="images/qrcode.png" alt="二维码">
+        </div>
+        <div class="footer-section">
+            <h4>联系方式</h4>
+            <p>客服热线：400-888-6666</p>
+            <p>邮箱：service@zhihui.com</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2025 智慧生活网 版权所有 | 京ICP备12345678号</p>
+    </div>
+</footer>
+
+<!-- 在线咨询浮动窗 -->
+<div class="float-consult">
+    <div class="consult-btn">
+        <span>💬</span>
+    </div>
+    <div class="consult-window">
+        <div class="consult-header">
+            <span>在线咨询</span>
+            <span class="close">✕</span>
+        </div>
+        <div class="consult-body">
+            <p>👋 您好！有什么可以帮您？</p>
+            <p>📞 客服热线：<span class="phone">400-888-6666</span></p>
+            <p>💬 在线时间：9:00-21:00</p>
+            <p>📧 邮箱：service@zhihui.com</p>
+        </div>
+    </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
